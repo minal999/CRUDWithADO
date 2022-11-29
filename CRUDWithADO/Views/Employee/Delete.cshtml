@@ -1,0 +1,27 @@
+﻿@model CRUDWithADO.DAL.Employee
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h3>Do you want to Delete ?</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Employee Id</label>
+        @Html.DisplayFor(model=>model.Id)
+    </div>
+    <div class="mb-3">
+        <label>Employee Name</label>
+        @Html.DisplayFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label>Salary</label>
+        @Html.DisplayFor(model=>model.Salary)
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Delete" class="btn btn-outline-danger" />
+    </div>
+}
+
+

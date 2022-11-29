@@ -1,0 +1,17 @@
+﻿@model CRUDWithADO.DAL.Product
+<h3>Add New Product</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Product Name</label>
+        @Html.TextBoxFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label>Product Price</label>
+        @Html.TextBoxFor(model=>model.Price)
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Save" class="btn btn-outline-primary" />
+    </div>
+}

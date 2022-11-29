@@ -1,0 +1,25 @@
+﻿@model CRUDWithADO.DAL.Product
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>View Product</h1>
+
+<div class="mb-3">
+    <label>Product Id : </label>
+    @Html.DisplayFor(model=>model.Id)
+</div>
+<div class="mb-3">
+    <label>Product Name : </label>
+    @Html.DisplayFor(model=>model.Name)
+</div>
+<div class="mb-3">
+    <label>Product Price : </label>
+    @Html.DisplayFor(model=>model.Price)
+</div>
+<div class="mb-3">
+    @Html.ActionLink("Back to List","List","Product")
+</div>
+
+
+

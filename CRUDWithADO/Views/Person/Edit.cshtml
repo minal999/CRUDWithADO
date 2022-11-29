@@ -1,0 +1,30 @@
+﻿@model CRUDWithADO.DAL.Person
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h3>Edit Person</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Person Id</label>
+        @Html.TextBoxFor(model=>model.Id,new { @readonly = "readonly" })
+    </div>
+    <div class="mb-3">
+        <label>Person Name</label>
+        @Html.TextBoxFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label>Person City</label>
+        @Html.TextBoxFor(model=>model.City)
+    </div>
+    <div class="mb-3">
+        <label>Person Age</label>
+        @Html.TextBoxFor(model=>model.Age)
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Update" class="btn btn-outline-primary" />
+    </div>
+}
+

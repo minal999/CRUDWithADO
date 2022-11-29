@@ -1,0 +1,21 @@
+﻿@model CRUDWithADO.DAL.Product
+<h3>Do you want to Delete ?</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Product Id</label>
+        @Html.DisplayFor(model=>model.Id)
+    </div>
+    <div class="mb-3">
+        <label>Product Name</label>
+        @Html.DisplayFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label>Product Price</label>
+        @Html.DisplayFor(model=>model.Price)
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Delete" class="btn btn-outline-danger" />
+    </div>
+}

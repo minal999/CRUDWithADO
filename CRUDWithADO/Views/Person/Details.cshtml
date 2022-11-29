@@ -1,0 +1,28 @@
+﻿@model CRUDWithADO.DAL.Person
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>View Persons</h1>
+
+<div class="mb-3">
+    <label>Person Id : </label>
+    @Html.DisplayFor(model=>model.Id)
+</div>
+<div class="mb-3">
+    <label>Person Name : </label>
+    @Html.DisplayFor(model=>model.Name)
+</div>
+<div class="mb-3">
+    <label>Person City : </label>
+    @Html.DisplayFor(model=>model.City)
+</div>
+<div class="mb-3">
+    <label>Person Age : </label>
+    @Html.DisplayFor(model=>model.Age)
+</div>
+<div class="mb-3">
+    @Html.ActionLink("Back to List","List","Person")
+</div>
+
+

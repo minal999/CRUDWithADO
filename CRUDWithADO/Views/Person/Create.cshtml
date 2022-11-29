@@ -1,0 +1,28 @@
+﻿@model CRUDWithADO.DAL.Person
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h3>Add New Person</h3>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        <label>Person Name</label>
+        @Html.TextBoxFor(model=>model.Name)
+    </div>
+    <div class="mb-3">
+        <label>Person City</label>
+        @Html.TextBoxFor(model=>model.City)
+    </div>
+    <div class="mb-3">
+        <label>Person Age</label>
+        @Html.TextBoxFor(model=>model.Age)
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Save" class="btn btn-outline-primary" />
+    </div>
+}
+
+
